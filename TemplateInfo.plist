@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.apple.dt.unit.KingApplication</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.cocoaTouchApplicationBase</string>
+		<string>com.apple.dt.unit.coreDataCocoaTouchApplication</string>
+	</array>
+	<key>Concrete</key>
+	<true/>
+	<key>Description</key>
+	<string>This template provides a starting point for any application. It provides just an application delegate and a window.</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Objective-C</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</string>
+						<string>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</string>
+						<string>PCH/PrefixHeader.pch</string>
+						<string>Category/UIView+Frame.h</string>
+						<string>Category/UIView+Frame.m</string>
+						<string>Supporting Files/config.xcconfig</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];  
+
+self.window.rootViewController = ;
+
+self.window.backgroundColor = [UIColor whiteColor];
+</string>
+						<key>AppDelegate.m:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>[self.window makeKeyAndVisible];
+return YES;
+</string>
+						<key>PCH/PrefixHeader.pch</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>PCH</string>
+							</array>
+							<key>Path</key>
+							<string>PCH/PrefixHeader.pch</string>
+						</dict>
+						<key>Category/UIView+Frame.h</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>Category</string>
+							</array>
+							<key>Path</key>
+							<string>Category/UIView+Frame.h</string>
+						</dict>
+						<key>Category/UIView+Frame.m</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>Category</string>
+							</array>
+							<key>Path</key>
+							<string>Category/UIView+Frame.m</string>
+						</dict>
+						<key>Supporting Files/config.xcconfig</key>
+						<dict>
+							<key>Group</key>
+							<array>
+								<string>Supporting Files</string>
+							</array>
+							<key>Path</key>
+							<string>./config.xcconfig</string>
+						</dict>
+					</dict>
+				</dict>
+				<key>Swift</key>
+				<dict>
+					<key>Definitions</key>
+					<dict>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:body</key>
+						<string>self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+// Override point for customization after application launch.
+self.window!.backgroundColor = UIColor.whiteColor()</string>
+						<key>AppDelegate.swift:implementation:methods:applicationdidFinishLaunchingWithOptions:return</key>
+						<string>self.window!.makeKeyAndVisible()
+return true
+</string>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Frameworks</key>
+			<array>
+				<string>SystemConfiguration</string>
+				<string>CFNetwork</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,14 @@
+//
+//  config.xcconfig
+//  test
+//
+//  Created by king on 16/7/20.
+//  Copyright © 2016年 King. All rights reserved.
+//
+
+//:configuration = Release
+GCC_PRECOMPILE_PREFIX_HEADER = YES
+
+//:configuration = Release
+GCC_PREFIX_HEADER = $(SRCROOT)/$(PRODUCT_NAME)/Supporting Files/PrefixHeader.pch
+
